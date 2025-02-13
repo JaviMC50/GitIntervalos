@@ -11,7 +11,7 @@ package intervalos;
 public class Intervalos {
 
     public static void main(String[] args) {
-        int a = 5;
+        int a = 10;
         System.out.println("El intervalo es " + ObtenerCategoria(a));
     }
     public static String ObtenerCategoria (int a) {

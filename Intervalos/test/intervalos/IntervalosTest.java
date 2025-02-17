@@ -44,6 +44,8 @@ public class IntervalosTest {
         System.out.println("main");
         String[] args = null;
         Intervalos.main(args);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -51,26 +53,8 @@ public class IntervalosTest {
      */
     @Test
     public void testObtenerCategoria() {
-        System.out.println("ObtenerCategoria");
-        int a = 10;
-        String expResult = "Intervalo C";
-        String result = Intervalos.ObtenerCategoria(a);
-        assertEquals(expResult, result);
-    }
-    @Test
-    public void testObtenerCategoria2() {
-        System.out.println("ObtenerCategoria");
-        int a = 3;
-        String expResult = "Intervalo B";
-        String result = Intervalos.ObtenerCategoria(a);
-        assertEquals(expResult, result);
-    }
-    @Test
-    public void testObtenerCategoria3() {
-        System.out.println("ObtenerCategoria");
-        int a = -10;
-        String expResult = "Intervalo A";
-        String result = Intervalos.ObtenerCategoria(a);
-        assertEquals(expResult, result);
+        assertEquals("Intervalo A", Intervalos.ObtenerCategoria(-5));
+        assertEquals("Intervalo B", Intervalos.ObtenerCategoria(0));
+        assertEquals("Intervalo C", Intervalos.ObtenerCategoria(10));
     }
 }

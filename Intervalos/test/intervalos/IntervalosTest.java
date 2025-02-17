@@ -52,9 +52,9 @@ public class IntervalosTest {
      * Test of ObtenerCategoria method, of class Intervalos.
      */
     @Test
-    public void testObtenerCategoria() {
-        assertEquals("Intervalo A", Intervalos.ObtenerCategoria(-5));
-        assertEquals("Intervalo B", Intervalos.ObtenerCategoria(0));
-        assertEquals("Intervalo C", Intervalos.ObtenerCategoria(10));
+    public void testObtenerIntervalo() {
+        assertEquals("Intervalo A", Intervalos.ObtenerIntervalo(-5));
+        assertEquals("Intervalo B", Intervalos.ObtenerIntervalo(0));
+        assertEquals("Intervalo C", Intervalos.ObtenerIntervalo(10));
     }
 }

@@ -9,17 +9,20 @@ package intervalos;
  * @author javi
  */
 public class Intervalos {
+    
+    //Obtiene el intervalo
+    // return cadena indicando el intervalo
 
     public static void main(String[] args) {
         int a = 10;
-        System.out.println("El intervalo es " + ObtenerCategoria(a));
+        System.out.println("El intervalo es " + ObtenerIntervalo(a));
     }
-    public static String ObtenerCategoria (int a) {
-        if (a <-4) {
+    public static String ObtenerIntervalo (double k) {
+        if (k <-4) {
             final String A = "Intervalo A";
             return A;
         }
-        if ( a>= -4 && a <6) {
+        if ( k>= -4 && k <6) {
             return "Intervalo B";
         } else {
             return "Intervalo C";
